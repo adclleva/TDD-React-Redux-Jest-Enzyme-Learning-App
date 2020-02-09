@@ -2,7 +2,7 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import Headline from './index'
 
-import { findByDataTestAtrr } from '../../../utils/index'
+import { findByDataTestAtrr, checkProps } from '../../../utils/index'
 
 const setUp = (props={}) => {
   const component = shallow(<Headline {...props}/>);
@@ -11,6 +11,30 @@ const setUp = (props={}) => {
 
 // this describe is for the headline component
  describe('Headline Component', () => {
+
+  describe('Checking PropTypes', () => {
+     
+    it('Should not throw a warning', () => {
+      const expectedProps = { // these are the expected proptypes
+        header: "Test Header",
+        description: 'Test Description',
+        tempArr: [
+          {
+            fName: 'Test fName',
+            lName: 'Test lName',
+            email: 'test@email.com',
+            age: 25,
+            onlineStatus: false
+          }
+        ]
+      }
+
+      const propsErrorMessage = checkProps(Headline, expectedProps) // this is a function that we got from the utils folder
+
+      expect(propsErrorMessage).toBeUndefined(); // this will expect the test to be undefined since there shouldn't be an error
+    })
+
+  })  
 
   // the reason why we have different describe functions is because the beforeEach function will be different
   describe('Have props', () => {
