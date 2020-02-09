@@ -1,9 +1,8 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import Headline from './index'
-import checkPropTypes from 'check-prop-types'
 
-import { findByDataTestAtrr } from '../../../utils/index'
+import { findByDataTestAtrr, checkProps } from '../../../utils/index'
 
 const setUp = (props={}) => {
   const component = shallow(<Headline {...props}/>);
@@ -30,14 +29,9 @@ const setUp = (props={}) => {
         ]
       }
 
-      const propsErr = checkPropTypes(
-                        Headline.propTypes, // pass down the component propTypes
-                        expectedProps, // the expected props that are being passed down
-                        'props', // what we are checking/testing
-                        Headline.name // the name of the component
-                      ) // this will recieve any error messages
+      const propsErrorMessage = checkProps(Headline, expectedProps) // this is a function that we got from the utils folder
 
-      expect(propsErr).toBeUndefined(); // this will expect the test to be undefined since there shouldn't be an error
+      expect(propsErrorMessage).toBeUndefined(); // this will expect the test to be undefined since there shouldn't be an error
     })
 
   })  
