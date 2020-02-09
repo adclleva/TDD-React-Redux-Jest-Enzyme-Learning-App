@@ -8,7 +8,10 @@ function App() {
     <div className="App">
       <Header/>
       <section className="main">
-        <Headline/>
+        <Headline 
+          header="Test Title"
+          description="Test Description"
+        />
       </section>
     </div>
   );
