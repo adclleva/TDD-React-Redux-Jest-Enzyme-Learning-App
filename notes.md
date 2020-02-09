@@ -31,3 +31,10 @@ a component (or multiple components), finding elements, and interacting with ele
 
 Jest is a simple framework. it has two global object knows as describe and it . 
 As name suggest describe , describe about the test and it is used to test.
+
+We create the store for state management, and we need to at least pass one reducer
+
+Store An Object that holds the applications state data
+Reducer A function that returns some state data. Is triggered by an action type
+Action An object that tells the reducer how to change the state. 
+  It must contain a type property. It can optionally contain a payload property
