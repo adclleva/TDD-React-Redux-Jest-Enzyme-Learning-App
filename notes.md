@@ -38,3 +38,11 @@ Store An Object that holds the applications state data
 Reducer A function that returns some state data. Is triggered by an action type
 Action An object that tells the reducer how to change the state. 
   It must contain a type property. It can optionally contain a payload property
+
+https://github.com/reduxjs/redux-thunk
+Redux Thunk middleware allows you to write action creators that return a function
+instead of an action. The thunk can be used to delay the dispatch of an action,
+or to dispatch only if a certain condition is met. The inner function receives the store methods dispatch and getState as parameters.
+
+React is a library and has a View, but lacks Model and Controller components.
+Angular is a framework, included in the list of the most popular JavaScript frameworks.
