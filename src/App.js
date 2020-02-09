@@ -9,8 +9,8 @@ function App() {
       <Header/>
       <section className="main">
         <Headline 
-          header="Test Title"
-          description="Test Description"
+          header="Posts"
+          description="Click button to render posts!"
         />
       </section>
     </div>
