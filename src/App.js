@@ -5,7 +5,6 @@ import './app.scss'
 function App() {
   return (
     <div >
-      learn react
       <Header/>
     </div>
   );
