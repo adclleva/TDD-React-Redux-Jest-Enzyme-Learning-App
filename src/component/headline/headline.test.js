@@ -15,6 +15,7 @@ const setUp = (props={}) => {
   describe('Checking PropTypes', () => {
      
     it('Should not throw a warning', () => {
+      
       const expectedProps = { // these are the expected proptypes
         header: "Test Header",
         description: 'Test Description',

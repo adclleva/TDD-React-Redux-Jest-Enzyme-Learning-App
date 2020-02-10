@@ -4,6 +4,12 @@ import SharedButton from './index'
 
 import { findByDataTestAtrr, checkProps } from '../../../utils/index'
 
+const setUp = (props={}) => {
+  
+  const component = shallow(<SharedButton {...props}/>)
+  return component
+}
+
 describe('SharedButton Componet', () => {
   
   describe('Checking PropTypes', () => {
@@ -18,5 +24,26 @@ describe('SharedButton Componet', () => {
 
       expect(propsErrorMessage).toBeUndefined();
     })
+  })
+
+  describe('Renders', () => {
+    
+    let component;
+    beforeEach(() => {
+      const props = {
+        buttonText: "Test Text",
+        emitEvent: () => {}
+      }
+  
+      component = setUp(props)
+
+    })
+
+    it('Should render a button', () => {
+      const button = findByDataTestAtrr(component, 'buttonComponent')
+      expect(button.length).toBe(1)
+    })
+    
+
   })
 })
