@@ -6,7 +6,7 @@
  */
 
 import { combineReducers } from 'redux'
-import success from './successReducer'
+import success from './(Not_being_used_anymore)successReducer'
 
 export default combineReducers({
   success 

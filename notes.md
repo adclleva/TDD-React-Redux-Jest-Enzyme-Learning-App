@@ -46,3 +46,21 @@ or to dispatch only if a certain condition is met. The inner function receives t
 
 React is a library and has a View, but lacks Model and Controller components.
 Angular is a framework, included in the list of the most popular JavaScript frameworks.
+
+for currying functions ES6
+https://medium.com/front-end-weekly/javascript-es6-curry-functions-with-practical-examples-6ba2ced003b1
+
+making assertions in jest/enzyme is when you use expect
+
+when utilizing redux we have to pass one reducer to the store so the app wont crash
+
+keep in mind that reducers are pure functions, it wont mutate a not piece of state and not mutate the original
+also doesn't utilize any complex logic, only return a new piece of state given the payload
+
+https://redux.js.org/basics/reducers#reducers
+It's called a reducer because it's the type of function you would pass to Array.prototype.reduce(reducer, ?initialValue). 
+It's very important that the reducer stays pure. 
+Things you should never do inside a reducer:
+  Mutate its arguments;
+  Perform side effects like API calls and routing transitions;
+  Call non-pure functions, e.g. Date.now() or Math.random().
