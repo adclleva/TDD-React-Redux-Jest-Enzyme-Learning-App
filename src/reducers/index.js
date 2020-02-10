@@ -6,8 +6,8 @@
  */
 
 import { combineReducers } from 'redux'
-import success from './(Not_being_used_anymore)successReducer'
+import postReducer from './posts/reducer'
 
 export default combineReducers({
-  success 
+  postReducer 
 })
