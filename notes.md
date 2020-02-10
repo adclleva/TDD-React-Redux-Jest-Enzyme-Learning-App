@@ -64,3 +64,8 @@ Things you should never do inside a reducer:
   Mutate its arguments;
   Perform side effects like API calls and routing transitions;
   Call non-pure functions, e.g. Date.now() or Math.random().
+
+Unit testing means testing individual modules of an application in isolation (without any interaction with dependencies) to confirm that the code is doing things right.
+Integration testing means checking if different modules are working fine when combined together as a group.
+Functional testing means testing a slice of functionality in the system (may interact with dependencies) to confirm that the code is doing the right things.
+
