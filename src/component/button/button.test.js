@@ -2,7 +2,7 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import SharedButton from './index'
 
-import { findByDataTestAtrr, checkProps } from '../../../utils/index'
+import { findByDataTestAttr, checkProps } from '../../../utils/index'
 
 const setUp = (props={}) => {
   
@@ -40,10 +40,14 @@ describe('SharedButton Componet', () => {
     })
 
     it('Should render a button', () => {
-      const button = findByDataTestAtrr(component, 'buttonComponent')
+      const button = findByDataTestAttr(component, 'buttonComponent')
       expect(button.length).toBe(1)
     })
     
+    it('Should render text for the button', () => {
+      const text = findByDataTestAttr(component, 'buttonText')
+      expect(text.length).toBe(1)
+    })
 
   })
 })

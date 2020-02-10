@@ -1,6 +1,6 @@
 import checkPropTypes from 'check-prop-types'
 
-export const findByDataTestAtrr = (component, attr) => { // it finds the specific property selector, we find by the test attributes
+export const findByDataTestAttr = (component, attr) => { // it finds the specific property selector, we find by the test attributes
   const wrapper = component.find(`[data-test-id='${attr}']`)  
   return wrapper
 }
