@@ -69,3 +69,5 @@ Unit testing means testing individual modules of an application in isolation (wi
 Integration testing means checking if different modules are working fine when combined together as a group.
 Functional testing means testing a slice of functionality in the system (may interact with dependencies) to confirm that the code is doing the right things.
 
+Using "data-test" in Tests
+http://blog.rstankov.com/using-rel-in-testing/
