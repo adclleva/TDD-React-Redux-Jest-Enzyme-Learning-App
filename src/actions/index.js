@@ -1,7 +1,7 @@
 import { types } from './types'
 import axios from 'axios'
 
-export const fetchPosts = () => async(dispatch) => {
+export const fetchPosts = () => async(dispatch) => { 
   await axios.get('https://jsonplaceholder.typicode.com/posts?_limit=10')
   .then(resp => {
     dispatch({

@@ -72,11 +72,16 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = state => { // this is the global state from Redux
   return {
-    posts: state.postReducer
+    posts: state.posts // here we get the state for posts
   }
 }
 
+const mapDispatchToProps = {
+  // the keys will be the name of the prop the component will recieve
+  // the values will the be action that we want it to be able to dsipatch to the reducer
+    fetchPosts: fetchPosts
+}
 
-export default connect(mapStateToProps, { fetchPosts })(App); // this connects the redux with the react
+export default connect(mapStateToProps, mapDispatchToProps)(App); // this connects the redux with the react
