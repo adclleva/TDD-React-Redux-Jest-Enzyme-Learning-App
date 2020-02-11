@@ -71,3 +71,14 @@ Functional testing means testing a slice of functionality in the system (may int
 
 Using "data-test" in Tests
 http://blog.rstankov.com/using-rel-in-testing/
+
+Promise based HTTP client for the browser and node.js
+https://github.com/axios/axios
+https://medium.com/better-programming/how-to-use-async-await-with-axios-in-react-e07daac2905f
+https://medium.com/better-programming/understanding-async-await-in-javascript-1d81bb079b2c
+https://blog.hellojs.org/asynchronous-javascript-from-callback-hell-to-async-and-await-9b9ceb63c8e8
+
+information for async and promises
+https://www.youtube.com/watch?v=pt_cwna0r0s
+https://www.youtube.com/watch?v=V_Kr9OSfDeU
+async await is an elegant way of handling promises
