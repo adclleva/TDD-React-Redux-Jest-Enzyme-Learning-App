@@ -89,3 +89,5 @@ https://medium.com/front-end-weekly/do-i-still-need-to-bind-react-functions-in-2
 action creators get called within our app where the React and Redux are combined
 
 this helps with the react redux flow https://hackernoon.com/https-medium-com-heypb-react-redux-workflow-in-4-steps-beginner-friendly-guide-4aea9d56f5bd
+
+we need to create a test store in order to run our integration tests
