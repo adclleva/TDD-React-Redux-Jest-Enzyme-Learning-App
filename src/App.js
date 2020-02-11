@@ -72,13 +72,14 @@ class App extends Component {
   }
 }
 
+// we pass this as a function
 const mapStateToProps = state => { // this is the global state from Redux
   return {
     posts: state.posts // here we get the state for posts
   }
 }
 
-const mapDispatchToProps = {
+const mapDispatchToProps = { // this is just an object
   // the keys will be the name of the prop the component will recieve
   // the values will the be action that we want it to be able to dsipatch to the reducer
     fetchPosts: fetchPosts
