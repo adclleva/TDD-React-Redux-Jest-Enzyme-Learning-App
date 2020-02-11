@@ -82,3 +82,6 @@ information for async and promises
 https://www.youtube.com/watch?v=pt_cwna0r0s
 https://www.youtube.com/watch?v=V_Kr9OSfDeU
 async await is an elegant way of handling promises
+
+using bind is obsolete to bind functions by using class field syntax
+https://medium.com/front-end-weekly/do-i-still-need-to-bind-react-functions-in-2019-6d0fe72f40d7
