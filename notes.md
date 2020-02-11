@@ -64,3 +64,34 @@ Things you should never do inside a reducer:
   Mutate its arguments;
   Perform side effects like API calls and routing transitions;
   Call non-pure functions, e.g. Date.now() or Math.random().
+
+Unit testing means testing individual modules of an application in isolation (without any interaction with dependencies) to confirm that the code is doing things right.
+Integration testing means checking if different modules are working fine when combined together as a group.
+Functional testing means testing a slice of functionality in the system (may interact with dependencies) to confirm that the code is doing the right things.
+
+Using "data-test" in Tests
+http://blog.rstankov.com/using-rel-in-testing/
+
+Promise based HTTP client for the browser and node.js
+https://github.com/axios/axios
+https://medium.com/better-programming/how-to-use-async-await-with-axios-in-react-e07daac2905f
+https://medium.com/better-programming/understanding-async-await-in-javascript-1d81bb079b2c
+https://blog.hellojs.org/asynchronous-javascript-from-callback-hell-to-async-and-await-9b9ceb63c8e8
+
+information for async and promises
+https://www.youtube.com/watch?v=pt_cwna0r0s
+https://www.youtube.com/watch?v=V_Kr9OSfDeU
+async await is an elegant way of handling promises
+
+using bind is obsolete to bind functions by using class field syntax
+https://medium.com/front-end-weekly/do-i-still-need-to-bind-react-functions-in-2019-6d0fe72f40d7
+
+action creators get called within our app where the React and Redux are combined
+
+this helps with the react redux flow https://hackernoon.com/https-medium-com-heypb-react-redux-workflow-in-4-steps-beginner-friendly-guide-4aea9d56f5bd
+
+we need to create a test store in order to run our integration tests
+
+https://github.com/axios/moxios
+Moxios is Mock axios requests for testing
+

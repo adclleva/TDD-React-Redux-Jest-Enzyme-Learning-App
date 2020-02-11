@@ -2,7 +2,7 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import Headline from './index'
 
-import { findByDataTestAtrr, checkProps } from '../../../utils/index'
+import { findByDataTestAttr, checkProps } from '../../../utils/index'
 
 const setUp = (props={}) => {
   const component = shallow(<Headline {...props}/>);
@@ -15,6 +15,7 @@ const setUp = (props={}) => {
   describe('Checking PropTypes', () => {
      
     it('Should not throw a warning', () => {
+      
       const expectedProps = { // these are the expected proptypes
         header: "Test Header",
         description: 'Test Description',
@@ -50,17 +51,17 @@ const setUp = (props={}) => {
     });
 
     it('Should render without errors', () => {
-      const component = findByDataTestAtrr(wrapper, 'headLineComponent')
+      const component = findByDataTestAttr(wrapper, 'headLineComponent')
       expect(component.length).toBe(1)
     })
     
     it('Should render the header', () => {
-      const header = findByDataTestAtrr(wrapper, 'header') // this will reference to the data-test attribute that implemented
+      const header = findByDataTestAttr(wrapper, 'header') // this will reference to the data-test attribute that implemented
       expect(header.length).toBe(1)
     })
 
     it('Should render the description', () => {
-      const description = findByDataTestAtrr(wrapper, 'description') // this will reference to the data-test attribute that implemented
+      const description = findByDataTestAttr(wrapper, 'description') // this will reference to the data-test attribute that implemented
       expect(description.length).toBe(1)
     })
 
@@ -75,17 +76,17 @@ const setUp = (props={}) => {
 
 
     it('Should not render without errors', () => {
-      const component = findByDataTestAtrr(wrapper, 'headLineComponent')
+      const component = findByDataTestAttr(wrapper, 'headLineComponent')
       expect(component.length).toBe(0)
     })
     
     it('Should not render the header', () => {
-      const header = findByDataTestAtrr(wrapper, 'header') // this will reference to the data-test attribute that implemented
+      const header = findByDataTestAttr(wrapper, 'header') // this will reference to the data-test attribute that implemented
       expect(header.length).toBe(0)
     })
 
     it('Should not render the description', () => {
-      const description = findByDataTestAtrr(wrapper, 'description') // this will reference to the data-test attribute that implemented
+      const description = findByDataTestAttr(wrapper, 'description') // this will reference to the data-test attribute that implemented
       expect(description.length).toBe(0)
     })
   })
